@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Service Details | DN Cleaning Service</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="logo.png" type="image/png">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">DN Cleaning Service</div>
+    <div class="menu-overlay" onclick="toggleMenu()"></div>
+    <nav>
+        <ul id="nav-links">
+            <i class="fas fa-times menu-close-btn" onclick="toggleMenu()"></i>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+</header>
+
+<main id="service-details-page">
+    <div class="container">
+        <div class="details-wrapper">
+            <div class="details-image-col">
+                <img id="detail-img" src="" alt="Service Image">
+            </div>
+            <div class="details-info-col">
+                <h1 id="detail-name">Service Name</h1>
+                <p id="detail-desc">Service Description</p>
+                
+                <div class="customization-section">
+                    <h3>Customize Your Service</h3>
+                    <div id="detail-options" class="options-list">
+                        <!-- Options will be injected here by JS -->
+                    </div>
+                </div>
+
+                <div class="schedule-section">
+                    <h3>Schedule Your Service</h3>
+                    <div class="form-group">
+                        <label for="service-date">Preferred Date</label>
+                        <input type="date" id="service-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="service-time">Preferred Time</label>
+                        <select id="service-time">
+                            <option value="">Select Time Slot</option>
+                            <option value="09:00 AM - 11:00 AM">09:00 AM - 11:00 AM</option>
+                            <option value="11:00 AM - 01:00 PM">11:00 AM - 01:00 PM</option>
+                            <option value="02:00 PM - 04:00 PM">02:00 PM - 04:00 PM</option>
+                            <option value="04:00 PM - 06:00 PM">04:00 PM - 06:00 PM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="total-section">
+                    <h3>Total Estimate: ₹<span id="detail-total">0</span></h3>
+                </div>
+
+                <button id="book-now-btn" class="btn btn-whatsapp" style="width: 100%; margin-top: 20px;">
+                    <i class="fab fa-whatsapp"></i> Book Now on WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-bottom">
+            <p>&copy; 2026 <strong>DN Cleaning Service</strong>. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<a href="https://wa.me/919662755375" class="whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>

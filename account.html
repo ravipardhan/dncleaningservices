@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Account | DN Cleaning Service</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="logo.png" type="image/png">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">DN Cleaning Service</div>
+    <div class="menu-overlay" onclick="toggleMenu()"></div>
+    <nav>
+        <ul id="nav-links">
+            <i class="fas fa-times menu-close-btn" onclick="toggleMenu()"></i>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <!-- Account Hero Section -->
+    <section class="about-hero">
+        <div class="overlay"></div>
+        <div class="hero-content reveal">
+            <h1>My Account</h1>
+            <p>Manage your profile and view your booking history.</p>
+        </div>
+    </section>
+
+    <!-- Account Details Section -->
+    <section class="account-section reveal">
+        <div class="account-wrapper">
+            
+            <!-- Sidebar -->
+            <div class="account-sidebar">
+                <ul>
+                    <li><a href="#" class="account-link active"><i class="fas fa-user-circle"></i> Profile</a></li>
+                    <li><a href="#" class="account-link"><i class="fas fa-book-open"></i> My Bookings</a></li>
+                    <li><a href="#" class="account-link"><i class="fas fa-map-marker-alt"></i> Addresses</a></li>
+                    <li><a href="#" class="account-link logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </div>
+
+            <!-- Main Content -->
+            <div class="account-content">
+                <h2>Profile Information</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="acc-name">Full Name</label>
+                        <input type="text" id="acc-name" value="Devank Patidar">
+                    </div>
+                    <div class="form-group">
+                        <label for="acc-email">Email Address</label>
+                        <input type="email" id="acc-email" value="devankpatidar5375@gmail.com" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="acc-phone">Phone Number</label>
+                        <input type="tel" id="acc-phone" value="+91 9662755375">
+                    </div>
+                    <button type="submit" class="btn" style="width: auto; margin-top: 10px;">Update Profile</button>
+                </form>
+
+                <h2>Recent Bookings</h2>
+                <div class="booking-history-item">
+                    <p>Full Home Cleaning</p>
+                    <p>Date: 2024-02-15 | Status: <span class="status-completed">Completed</span></p>
+                    <a href="#">View Details</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-bottom">
+            <p>&copy; 2026 <strong>DN Cleaning Service</strong>. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<a href="https://wa.me/919662755375" class="whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Back to Top Button -->
+<a href="#" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+<!-- Mobile Bottom Navigation -->
+<nav class="mobile-bottom-nav">
+    <a href="index.html" class="nav-item">
+        <div class="nav-icon"><i class="fas fa-home"></i></div>
+        <span class="nav-label">Home</span>
+    </a>
+    <a href="cart.html" class="nav-item">
+        <div class="nav-icon"><i class="fas fa-shopping-cart"></i></div>
+        <span class="nav-label">Cart</span>
+    </a>
+    <a href="account.html" class="nav-item">
+        <div class="nav-icon"><i class="fas fa-user"></i></div>
+        <span class="nav-label">Account</span>
+    </a>
+    <div class="nav-item" id="mobile-more-btn">
+        <div class="nav-icon"><i class="fas fa-bars"></i></div>
+        <span class="nav-label">More</span>
+    </div>
+</nav>
+
+<!-- More Menu Popup -->
+<div id="mobile-more-menu" class="more-menu-popup">
+    <a href="service.html"><i class="fas fa-broom"></i> Services</a>
+    <a href="booking.html"><i class="fas fa-calendar-check"></i> Booking</a>
+    <a href="blog.html"><i class="fas fa-blog"></i> Blog</a>
+    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

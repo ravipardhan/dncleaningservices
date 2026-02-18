@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Cart | DN Cleaning Service</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="logo.png" type="image/png">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">DN Cleaning Service</div>
+    <div class="menu-overlay" onclick="toggleMenu()"></div>
+    <nav>
+        <ul id="nav-links">
+            <i class="fas fa-times menu-close-btn" onclick="toggleMenu()"></i>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <!-- Cart Hero Section -->
+    <section class="about-hero">
+        <div class="overlay"></div>
+        <div class="hero-content reveal">
+            <h1>My Cart</h1>
+            <p>Review your selected services before booking.</p>
+        </div>
+    </section>
+
+    <!-- Cart Content Section -->
+    <section class="cart-section" style="padding: 80px 20px; text-align: center;">
+        <div class="container" style="max-width: 800px; margin: 0 auto;">
+            <i class="fas fa-shopping-cart" style="font-size: 60px; color: #ddd; margin-bottom: 20px;"></i>
+            <h2 style="color: #0c2d48;">Your Cart is Empty</h2>
+            <p style="color: #555; margin-bottom: 30px;">You have not added any services to your cart yet. Browse our services to get started.</p>
+            <a href="service.html" class="btn">Browse Services</a>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-bottom">
+            <p>&copy; 2026 <strong>DN Cleaning Service</strong>. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<a href="https://wa.me/919662755375" class="whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Back to Top Button -->
+<a href="#" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+<!-- Mobile Bottom Navigation -->
+<nav class="mobile-bottom-nav">
+    <a href="index.html" class="nav-item">
+        <div class="nav-icon"><i class="fas fa-home"></i></div>
+        <span class="nav-label">Home</span>
+    </a>
+    <a href="cart.html" class="nav-item">
+        <div class="nav-icon"><i class="fas fa-shopping-cart"></i></div>
+        <span class="nav-label">Cart</span>
+    </a>
+    <a href="account.html" class="nav-item">
+        <div class="nav-icon"><i class="fas fa-user"></i></div>
+        <span class="nav-label">Account</span>
+    </a>
+    <div class="nav-item" id="mobile-more-btn">
+        <div class="nav-icon"><i class="fas fa-bars"></i></div>
+        <span class="nav-label">More</span>
+    </div>
+</nav>
+
+<!-- More Menu Popup -->
+<div id="mobile-more-menu" class="more-menu-popup">
+    <a href="service.html"><i class="fas fa-broom"></i> Services</a>
+    <a href="booking.html"><i class="fas fa-calendar-check"></i> Booking</a>
+    <a href="blog.html"><i class="fas fa-blog"></i> Blog</a>
+    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
